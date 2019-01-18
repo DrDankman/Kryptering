@@ -6,13 +6,13 @@ public class CMDInput {
             System.out.println("Programmet vet inte vad det ska göra! Avbryter...");
         }
         if (args.length == 1) {
-            System.out.println("Så du säger:" + args[0]);
+            System.out.println("Så du säger: " + args[0]);
         }
         if (args.length == 2) {
             System.out.println(Integer.parseInt(args[0]) + Integer.parseInt(args[1]));
         }
         if (args.length == 3) {
-            for (int i = args.length; i > 0; i--) {
+            for (int i = args.length-1; i >= 0; i--) {
                 System.out.println(args[i]);
             }
         }
